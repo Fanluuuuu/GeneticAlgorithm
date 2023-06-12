@@ -1,4 +1,4 @@
-package demo3;
+package binary;
 
 /**
 
@@ -21,9 +21,9 @@ public class Main {
         Population population = new Population(populationSize, 20);
 
         int generations = 0;
-        while (generations < 100) {
+        while (generations < 100 && population.getFittest().getFitness() < 0.99999) {
             population.calculateFitness(fitnessFunction);
-            System.out.println("Generation: " + population.getGeneration() + "\tFittest: " + population.getFittest().getFitness());
+            System.out.println("Generation: " + generations + "\tFittest: " + population.getFittest().getFitness());
 
             population = geneticAlgorithm.evolvePopulation(population);
 

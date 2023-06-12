@@ -1,4 +1,4 @@
-package demo4;
+package decimal;
 
 import java.util.*;
 

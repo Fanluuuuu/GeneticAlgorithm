@@ -1,4 +1,4 @@
-package demo4;
+package decimal;
 
 /**
  * 主程序类

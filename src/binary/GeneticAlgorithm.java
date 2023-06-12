@@ -1,4 +1,4 @@
-package demo3;
+package binary;
 
 import java.util.*;
 
