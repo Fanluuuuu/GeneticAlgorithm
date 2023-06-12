@@ -20,6 +20,18 @@ class SinFitnessFunction implements FitnessFunction {
 }
 
 /**
+ *x*Math.sin(10*Math.PI*2)+2.0
+ */
+class Sin10PIFitnessFunction implements FitnessFunction {
+    public double calculateFitness(Individual individual) {
+        double x = individual.getPhenotype();
+
+        //x*sin(10*PI*x)+2.0
+        return x*Math.sin(10*Math.PI*2)+2.0;
+    }
+}
+
+/**
  * 选择操作接口
  */
 interface SelectionOperator {

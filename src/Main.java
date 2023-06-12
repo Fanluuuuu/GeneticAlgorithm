@@ -1,5 +1,16 @@
+import binary.BinaryMain;
+import decimal.DecimalMain;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        BinaryMain binaryMain = new BinaryMain();
+        DecimalMain decimalMain = new DecimalMain();
+        boolean isBinary = true;
+        if(isBinary){
+            binaryMain.binary();
+        }else{
+            decimalMain.decimal();
+        }
     }
 }

@@ -4,8 +4,8 @@ package binary;
 
  主程序类
  */
-public class Main {
-    public static void main(String[] args) {
+public class BinaryMain {
+    public void binary(){
         int populationSize = 50;
         double mutationRate = 0.01;
         double crossoverRate = 0.9;
@@ -32,6 +32,5 @@ public class Main {
 
         System.out.println("\nSolution found in generation " + population.getGeneration());
         System.out.println("Fitness: " + population.getFittest().getFitness());
-        System.out.println("Phenotype: " + population.getFittest().getPhenotype());
     }
 }

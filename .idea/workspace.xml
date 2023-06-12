@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a440959d-c4b1-4568-a4d0-f98b1226e6da" name="Changes" comment="11">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo1/GeneticAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo2/GeneticAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary/BinaryMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decimal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decimal/DecimalMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/IdeaProjects/GeneticAlgorithm/src",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
@@ -40,9 +41,9 @@
       <recent name="D:\IdeaProjects\GeneticAlgorithm\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.decimal.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binary.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="BinaryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binary.BinaryMain" />
       <module name="GeneticAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -54,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="decimal.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="decimal.Main" />
+    <configuration name="DecimalMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="decimal.DecimalMain" />
       <module name="GeneticAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -67,10 +68,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="GeneticAlgorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.decimal.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DecimalMain" />
+        <item itemvalue="Application.BinaryMain" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686549677860</updated>
       <workItem from="1686549679026" duration="618000" />
-      <workItem from="1686564951605" duration="917000" />
+      <workItem from="1686564951605" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1686564984083</created>
@@ -106,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686565060184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11">
+      <created>1686567903406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686567903406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
