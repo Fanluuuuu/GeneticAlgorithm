@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a440959d-c4b1-4568-a4d0-f98b1226e6da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/StudentmanagerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/config/SpringmvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/AttendanceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/ClazzController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/LeaveController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/ScoreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/SelectedCourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/SystemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/controller/TeacherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Attendance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Clazz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Leave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/ScoreStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/SelectedCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/domain/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/interceptors/LoginInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/AdminMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/AttendanceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/ClazzMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/CourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/GradeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/LeaveMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/ScoreMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/SelectedCourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/StudenetMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/mapper/TeacherMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/AttendanceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/ClazzService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/AttendanceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/ClazzServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/LeaveServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/ScoreServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/SelectedCourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/Impl/TeacherServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/LeaveService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/ScoreService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/SelectedCourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/service/TeacherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/AjaxResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/CpachaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/DateFormatUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/PageBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/SnGenerateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/wdd/studentmanager/util/UploadUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/AdminMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/AttendanceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/ClazzMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/LeaveMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/ScoreMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/SelectedCourse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/mapper/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/js/echarts.common.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/js/outlook2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/js/validateExtends.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/color.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/default/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/2012080412263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/asterisk_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/basket_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/book_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/book_open_mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/book_previous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/chart_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/door_out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/filter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/find.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/folder_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/house.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/large_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/large_clipart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/large_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/large_shapes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/large_smartart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/mini_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/mini_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/mini_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/pencil_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/text_list_bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/text_list_numbers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/user_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/user_gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/user_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/vcard_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/world_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/world_night.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/icons/zoom_in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/easyui/themes/locale/easyui-lang-zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/css/H-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/css/H-ui.login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/css/H-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/acrossTab-2bak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/acrossTab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/acrossTab-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/acrossTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/admin-login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/admin-loginform-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/gq/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/gq/cn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/gq/gj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/gq/us.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/hamburger-retina.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/hamburger.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/icon-add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/icon_error_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/icon_jt2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/icon_right_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/icon_warning_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/loading_072.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/totop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/js/H-ui.admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/js/H-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/Hui-iconfont/1.0.1/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/icheck.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/jquery.icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/minimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/minimal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/icheck/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/jquery/1.9.1/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/lib/jquery/1.9.1/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/skin/default/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/skin/default/acrossTab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/skin/default/acrossTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/skin/default/icon_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/h-ui/skin/default/skin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/attendance/attendanceList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/clazz/clazzList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/course/courseList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/course/selectedCourseList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/leave/LeaveList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/score/scoreList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/score/scoreStats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/student/studentList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/personalView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/teacher/teacherList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/wdd/studentmanager/IteratorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/wdd/studentmanager/StudentmanagerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../项目截图/9.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2R5pDTJWI181Jlz1cB8CDINNbXP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/IdeaProjects/GeneticAlgorithm/src",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\GeneticAlgorithm\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a440959d-c4b1-4568-a4d0-f98b1226e6da" name="Changes" comment="" />
+      <created>1686549677860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686549677860</updated>
+      <workItem from="1686549679026" duration="618000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
