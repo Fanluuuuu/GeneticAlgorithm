@@ -6,7 +6,7 @@ public class Main {
 
         BinaryMain binaryMain = new BinaryMain();
         DecimalMain decimalMain = new DecimalMain();
-        boolean isBinary = true;
+        boolean isBinary = false;
         if(isBinary){
             binaryMain.binary();
         }else{

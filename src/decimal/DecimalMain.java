@@ -59,5 +59,7 @@ public class DecimalMain {
             System.out.println("Generation " + (i++) + ": Best fitness = " + currentMaxFitness);
             maxGeneration++;
         }
+
+
     }
 }

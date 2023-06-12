@@ -331,21 +331,18 @@ class GeneticAlgorithm {
      */
     public Population evolvePopulation(Population population) {
         Population newPopulation = new Population(populationSize, population.getGeneLength());
-
-// 保留精英
+        // 保留精英
         for (int i = 0; i < elitismCount; i++) {
             newPopulation.saveIndividual(i, population.getFittest(i));
         }
-
-// 繁殖新个体并添加到新种群中
+        // 繁殖新个体并添加到新种群中
         for (int i = elitismCount; i < population.size(); i++) {
             Individual parent1 = selectionOperator.select(population);
             Individual parent2 = selectionOperator.select(population);
             Individual child = crossoverOperator.crossover(parent1, parent2);
             newPopulation.saveIndividual(i, child);
         }
-
-// 变异除了精英以外的所有个体
+        // 变异除了精英以外的所有个体
         for (int i = elitismCount; i < newPopulation.size(); i++) {
             mutationOperator.mutate(newPopulation.getIndividual(i), mutationRate);
         }
