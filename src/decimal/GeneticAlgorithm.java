@@ -13,32 +13,15 @@ import java.util.*;
 interface FitnessFunction {
     double calculateFitness(Individual individual);
 }
-
 /**
- * sin(x)函数的适应度函数实现类
+ * x*sin(10*Π*x)+2.0函数的适应度函数实现类
  */
 class SinFitnessFunction implements FitnessFunction {
     public double calculateFitness(Individual individual) {
         double x = individual.getPhenotype();
-        return Math.sin(x);
+        return x*Math.sin(10*Math.PI*2)+2.0;
     }
 }
-
-/**
- * Double[] 的包装类，实现 Clusterable 接口
- */
-class DoubleArrayWrapper implements Clusterable {
-    private final double[] point;
-
-    public DoubleArrayWrapper(double[] point) {
-        this.point = point;
-    }
-
-    public double[] getPoint() {
-        return point;
-    }
-}
-
 /**
  * 聚类（K均值）适应度函数实现类
  */
@@ -64,7 +47,6 @@ class KMeansFitnessFunction implements FitnessFunction {
         }
         return fitness;
     }
-
     /**
      * 计算簇的中心点
      */
@@ -184,12 +166,27 @@ class GradientDescentFitnessFunction implements FitnessFunction {
 }
 
 /**
+ * Double[] 的包装类，实现 Clusterable 接口
+ */
+class DoubleArrayWrapper implements Clusterable {
+    private final double[] point;
+
+    public DoubleArrayWrapper(double[] point) {
+        this.point = point;
+    }
+
+    public double[] getPoint() {
+        return point;
+    }
+}
+
+
+/**
  * 选择操作接口
  */
 interface SelectionOperator {
     Individual select(Population population);
 }
-
 /**
  * 简单随机选择实现类
  */
@@ -200,7 +197,6 @@ class SimpleRandomSelection implements SelectionOperator {
         return population.getIndividual(index);
     }
 }
-
 /**
  * 轮盘赌选择实现类
  */
@@ -239,6 +235,88 @@ class SinglePointCrossover implements CrossoverOperator {
             } else {
                 child.setGene(i, parent2.getGene(i));
             }
+        }
+        return child;
+    }
+}
+
+/**
+ * 邻居交叉实现类
+ */
+class NeighborCrossover implements CrossoverOperator {
+    private int neighborSize;
+    public NeighborCrossover(int neighborSize) {
+        this.neighborSize = neighborSize;
+    }
+    public Individual crossover(Individual parent1, Individual parent2) {
+        Individual child = new Individual(parent1.getLength());
+        int crossoverPoint = (int) (Math.random() * parent1.getLength());
+
+        // 邻居交叉操作
+        for (int i = 0; i < parent1.getLength(); i++) {
+            if (i == crossoverPoint) {
+                // 取得当前基因的邻居
+                List<Integer> neighbors = getNeighbors((int) parent1.getGene(i), parent2, i);
+                // 从邻居中随机选择一个
+                int selectedNeighbor = neighbors.get((int)(Math.random()*neighbors.size()));
+                child.setGene(i, selectedNeighbor);
+            } else {
+                child.setGene(i, parent1.getGene(i));
+            }
+        }
+        return child;
+    }
+    /**
+     * 获取基因邻居列表
+     */
+    private List<Integer> getNeighbors(int geneValue, Individual parent, int currentIndex) {
+        List<Integer> neighbors = new ArrayList<>();
+        int start = Math.max(0, currentIndex - neighborSize);
+        int end = Math.min(parent.getLength(), currentIndex + neighborSize + 1);
+        for (int i = start; i < end; i++) {
+            if (parent.getGene(i) != geneValue) {
+                neighbors.add((int) parent.getGene(i));
+            }
+        }
+        return neighbors;
+    }
+}
+/**
+ * 加权平均交叉实现类
+ */
+class WeightedAverageCrossover implements CrossoverOperator {
+    private double alpha;
+    public WeightedAverageCrossover(double alpha) {
+        this.alpha = alpha;
+    }
+    public Individual crossover(Individual parent1, Individual parent2) {
+        Individual child = new Individual(parent1.getLength());
+        for (int i = 0; i < parent1.getLength(); i++) {
+            double gene1 = parent1.getGene(i);
+            double gene2 = parent2.getGene(i);
+            double newGene = alpha * gene1 + (1 - alpha) * gene2;
+            child.setGene(i, newGene);
+        }
+        return child;
+    }
+}
+/**
+ * 随机平均交叉实现类
+ */
+class RandomAverageCrossover implements CrossoverOperator {
+    private double prob;
+
+    public RandomAverageCrossover(double prob) {
+        this.prob = prob;
+    }
+
+    public Individual crossover(Individual parent1, Individual parent2) {
+        Individual child = new Individual(parent1.getLength());
+        for (int i = 0; i < parent1.getLength(); i++) {
+            double gene1 = parent1.getGene(i);
+            double gene2 = parent2.getGene(i);
+            double newGene = Math.random() < prob ? gene1 : gene2;
+            child.setGene(i, newGene);
         }
         return child;
     }
