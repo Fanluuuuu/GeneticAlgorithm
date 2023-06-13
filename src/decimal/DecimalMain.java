@@ -8,19 +8,20 @@ public class DecimalMain {
     public void decimal(){
         int populationSize = 100;
         int geneLength = 1;
-        Population population = new Population(populationSize, geneLength, new SinFitnessFunction());
-
         // 遗传算法参数设置
         double crossoverRate = 0.9;
         double mutationRate = 0.01;
+        //选择不同的适应度函数
+        Population population = new Population(populationSize, geneLength, new SinFitnessFunction());
+        //选择方式
         SelectionOperator selectionOperator = new RouletteWheelSelection();
+        //交叉方式
         CrossoverOperator crossoverOperator = new SinglePointCrossover();
+        //变异方式
         MutationOperator mutationOperator = new FlipMutation();
-
         // 记录全局最优个体和适应度值
         Individual globalBestIndividual = null;
         double globalMaxFitness = Double.NEGATIVE_INFINITY;
-
         // 初始化上一代最优个体
         Individual bestIndividual = population.getFittest();
         double maxFitness = bestIndividual.getFitness();
