@@ -276,6 +276,8 @@ class FlipMutation implements MutationOperator {
  */
 class Individual {
     private double[] genes; // 基因序列
+
+    private double phenotype; // 表现型
     private double fitness; // 适应度值
 
     public Individual(int length) {
@@ -308,6 +310,43 @@ class Individual {
     public double getPhenotype() {
         // 实数编码中的基因序列直接就是表现型，无需转换
         return genes[0];
+    }
+
+    public Individual(double[] genes, double phenotype) {
+        this.genes = genes;
+        this.phenotype = phenotype;
+    }
+
+    /**
+     * 单点交叉
+     */
+    public Individual crossover(Individual other, double rate) {
+        if (Math.random() < rate) {
+            int index = (int) (Math.random() * genes.length);
+            double[] childGenes = new double[genes.length];
+            for (int i = 0; i < genes.length; i++) {
+                if (i < index) {
+                    childGenes[i] = genes[i];
+                } else {
+                    childGenes[i] = other.genes[i];
+                }
+            }
+            double childPhenotype = childGenes[0];
+            return new Individual(childGenes, childPhenotype);
+        } else {
+            return Math.random() < 0.5 ? this : other;
+        }
+    }
+
+    /**
+     * 基因翻转变异
+     */
+    public void mutate(double rate) {
+        for (int i = 0; i < genes.length; i++) {
+            if (Math.random() < rate) {
+                genes[i] = -genes[i];
+            }
+        }
     }
 
     public double getFitness() {
@@ -414,5 +453,102 @@ class Population {
      */
     public Individual getIndividual(int index) {
         return individuals.get(index);
+    }
+}
+
+class GeneticAlgorithm {
+    private int populationSize; // 种群大小
+    private FitnessFunction fitnessFunction; // 适应度函数
+    private double crossoverRate; // 交叉概率
+    private double mutationRate; // 变异概率
+
+    public GeneticAlgorithm(int populationSize, FitnessFunction fitnessFunction, double crossoverRate, double mutationRate) {
+        this.populationSize = populationSize;
+        this.fitnessFunction = fitnessFunction;
+        this.crossoverRate = crossoverRate;
+        this.mutationRate = mutationRate;
+    }
+
+    /**
+     * 运行遗传算法，并返回适应度最好的个体
+     */
+    public Individual run(int maxGenerations) {
+        List<Individual> population = initializePopulation();
+        for (int i = 0; i < maxGenerations; i++) {
+            List<Individual> newPopulation = new ArrayList<>();
+            while (newPopulation.size() < populationSize) {
+                // 轮盘赌选择
+                Individual parent1 = rouletteWheelSelection(population);
+                Individual parent2 = rouletteWheelSelection(population);
+
+                // 单点交叉
+                Individual child = parent1.crossover(parent2, crossoverRate);
+
+                // 基因翻转变异
+                child.mutate(mutationRate);
+
+                // 计算适应度
+                double fitness = fitnessFunction.calculateFitness(child);
+                child.setFitness(fitness);
+
+                newPopulation.add(child);
+            }
+            population = newPopulation;
+
+            // 输出每代种群中适应度最好的个体
+            Individual bestIndividual = getBestIndividual(population);
+        }
+
+        // 返回适应度最好的个体
+        return getBestIndividual(population);
+    }
+
+    /**
+     * 初始化种群
+     */
+    private List<Individual> initializePopulation() {
+        List<Individual> population = new ArrayList<>();
+        for (int i = 0; i < populationSize; i++) {
+            double[] genes = new double[10];
+            for (int j = 0; j < genes.length; j++) {
+                genes[j] = Math.random() * 10 - 5;
+            }
+            double phenotype = genes[0];
+            population.add(new Individual(genes, phenotype));
+        }
+        return population;
+    }
+
+    /**
+     * 轮盘赌选择
+     */
+    private Individual rouletteWheelSelection(List<Individual> population) {
+        double sumFitness = 0;
+        for (Individual individual : population) {
+            sumFitness += individual.getFitness();
+        }
+        double rand = Math.random() * sumFitness;
+        double currentFitness = 0;
+        for (Individual individual : population) {
+            currentFitness += individual.getFitness();
+            if (currentFitness >= rand) {
+                return individual;
+            }
+        }
+        // 如果轮盘赌选择失败，则返回种群中适应度最好的个体
+        return getBestIndividual(population);
+    }
+
+    /**
+     * 获取种群中适应度最好的个体
+     */
+    private Individual getBestIndividual(List<Individual> population) {
+        Individual bestIndividual = population.get(0);
+        for (Individual individual : population) {
+            if (individual.getFitness() > bestIndividual.getFitness()) {
+                bestIndividual = individual;
+            }
+        }
+        return bestIndividual;
     }
 }

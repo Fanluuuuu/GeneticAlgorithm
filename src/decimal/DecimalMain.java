@@ -1,5 +1,6 @@
 package decimal;
 
+
 /**
  * 主程序类
  */
@@ -59,6 +60,17 @@ public class DecimalMain {
             System.out.println("Generation " + (i++) + ": Best fitness = " + currentMaxFitness);
             maxGeneration++;
         }
+
+        // 使用K均值聚类算法作为适应度函数进行测试
+        GeneticAlgorithm ga2 = new GeneticAlgorithm(100, new KMeansFitnessFunction(), 0.8, 0.1);
+        Individual bestIndividual2 = ga2.run(100);
+
+        // 使用梯度下降算法作为适应度函数进行测试
+        GeneticAlgorithm ga3 = new GeneticAlgorithm(100, new GradientDescentFitnessFunction(), 0.8, 0.1);
+        Individual bestIndividual3 = ga3.run(100);
+
+        System.out.println("Best individual (K-means): " + bestIndividual2.getFitness());
+        System.out.println("Best individual (gradient descent): " + bestIndividual3.getFitness());
 
 
     }
